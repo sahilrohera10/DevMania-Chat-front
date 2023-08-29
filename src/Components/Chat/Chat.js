@@ -31,7 +31,7 @@ export default function Chat() {
 
   //connect to socket.io
   useEffect(() => {
-    socket.current = io(`${configData.socketurl}`);
+    socket.current = io(`ws://${configData.socketurl}`);
     socket.current.emit("new-user-add", presentUser);
     socket.current.on("get-users", (users) => {
       setOnlineUsers(users);
