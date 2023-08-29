@@ -26,7 +26,7 @@ export default function Banner() {
         <p></p>
         <img
           style={{ height: "350px", margin: "auto", marginTop: "40px" }}
-          src="BannerPic1.png"
+          src="bannerPic1.png"
           alt=""
         />
       </div>
