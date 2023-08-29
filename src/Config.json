@@ -1,5 +1,5 @@
 {
     "clientId" :  "1037781417907-j0qm5486ctci6n5qkssrhm1mc5irm062.apps.googleusercontent.com" ,
-    "apiurl" : "http://localhost:4010",
-    "socketurl" : "localhost:8800"
+    "apiurl" : "https://devmania-back.onrender.com",
+    "socketurl" : "devmania-sockets.onrender.com"
 }
