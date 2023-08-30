@@ -31,7 +31,10 @@ export default function Chat() {
 
   //connect to socket.io
   useEffect(() => {
-    socket.current = io("wss://devmania-sockets.onrender.com");
+    // socket.current = io("wss://devmania-sockets.onrender.com");
+    socket.current = io("https://devmania-sockets.onrender.com", {
+      transports: ["websocket"], // Explicitly specify WebSocket as the transport
+    });
     socket.current.emit("new-user-add", presentUser);
     socket.current.on("get-users", (users) => {
       setOnlineUsers(users);
