@@ -70,7 +70,7 @@ export default function Users() {
       <div
         style={{
           width: "30vw",
-          minHeight: "70vh",
+          height: "-webkit-fill-available",
           overflow: "auto",
           border: "1px solid white",
           margin: "auto",
@@ -78,11 +78,13 @@ export default function Users() {
         }}
       >
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-          }}
+          style={
+            {
+              // display: "flex",
+              // justifyContent: "center",
+              // flexDirection: "column",
+            }
+          }
         >
           {data &&
             data.map((d) => (
